@@ -1,0 +1,74 @@
+# BEGIN iThemes Security - Do not modify or remove this line
+# iThemes Security Config Details: 2
+	# Pass through Authorization header.
+	<IfModule mod_rewrite.c>
+		RewriteEngine On
+		RewriteCond %{HTTP:Authorization} ^(.*)
+		RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
+	</IfModule>
+
+	# Ban Hosts - Security > Settings > Banned Users
+	SetEnvIF REMOTE_ADDR "^51\.81\.174\.97$" DenyAccess
+	SetEnvIF X-FORWARDED-FOR "^51\.81\.174\.97$" DenyAccess
+	SetEnvIF X-CLUSTER-CLIENT-IP "^51\.81\.174\.97$" DenyAccess
+
+	<IfModule mod_litespeed.c>
+		Order allow,deny
+		Allow from all
+		Deny from env=DenyAccess
+		Deny from 51.81.174.97
+	</IfModule>
+# END iThemes Security - Do not modify or remove this line
+
+# BEGIN GD-SSL
+<IfModule mod_rewrite.c>
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP_USER_AGENT} ^(.+)$
+RewriteCond %{SERVER_NAME} ^luxiewish\.com$ [OR]
+RewriteCond %{SERVER_NAME} ^gmo\.658\.myftpupload\.com$
+RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+Header add Strict-Transport-Security "max-age=300"
+Header always set Content-Security-Policy "upgrade-insecure-requests"
+</IfModule>
+# END GD-SSL
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+# END WordPress
+# BEGIN DS-XML-RPC-API
+# The directives (lines) between "BEGIN DS-XML-RPC-API" and "END DS-XML-RPC-API" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<Files xmlrpc.php>
+order deny,allow 
+deny from all
+
+</Files>
+
+# END DS-XML-RPC-API
+# BEGIN DS-XML-RPC-FIX-HOTLINK
+# The directives (lines) between "BEGIN DS-XML-RPC-FIX-HOTLINK" and "END DS-XML-RPC-FIX-HOTLINK" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^https://luxiewish.online [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?google.com [NC]
+RewriteRule \.(jpg|jpeg|png|gif)$ – [NC,F,L] 
+# END DS-XML-RPC-FIX-HOTLINK
+# BEGIN FRedirect_ErrorDocument
+# The directives (lines) between "BEGIN FRedirect_ErrorDocument" and "END FRedirect_ErrorDocument" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+ErrorDocument 404 /index.php?error=404
+# END FRedirect_ErrorDocument

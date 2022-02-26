@@ -1,0 +1,227 @@
+@font-face {
+  font-family: "wpcstore-icon";
+  src: url('../../../assets/fonts/wpcstore-icon.eot');
+  src: url('../../../assets/fonts/wpcstore-icon.eot?#iefix') format('eot'),
+  url('../../../assets/fonts/wpcstore-icon.woff2') format('woff2'),
+  url('../../../assets/fonts/wpcstore-icon.woff') format('woff'),
+  url('../../../assets/fonts/wpcstore-icon.ttf') format('truetype'),
+  url('../../../assets/fonts/wpcstore-icon.svg#wpcstore-icon') format('svg');
+}
+
+
+.fa-spin {
+  animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  animation: fa-spin 1s infinite steps(8);
+}
+
+@keyframes fa-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@mixin themecustom-icon {
+  font-family: "wpcstore-icon";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: baseline;
+}
+
+[class*="wpcstore-icon-"] {
+  @include themecustom-icon;
+}
+
+
+@function themecustom-char($filename) {
+  $char: "";
+
+  @if $filename == align-justify {
+    $char: "\E001";
+  }
+  @if $filename == angle-down {
+    $char: "\E002";
+  }
+  @if $filename == angle-left {
+    $char: "\E003";
+  }
+  @if $filename == angle-right {
+    $char: "\E004";
+  }
+  @if $filename == angle-up {
+    $char: "\E005";
+  }
+  @if $filename == bars {
+    $char: "\E006";
+  }
+  @if $filename == caret-down {
+    $char: "\E007";
+  }
+  @if $filename == caret-left {
+    $char: "\E008";
+  }
+  @if $filename == caret-right {
+    $char: "\E009";
+  }
+  @if $filename == caret-up {
+    $char: "\E00A";
+  }
+  @if $filename == check-circle {
+    $char: "\E00B";
+  }
+  @if $filename == check-square {
+    $char: "\E00C";
+  }
+  @if $filename == check {
+    $char: "\E00D";
+  }
+  @if $filename == circle {
+    $char: "\E00E";
+  }
+  @if $filename == clock {
+    $char: "\E00F";
+  }
+  @if $filename == cloud-download-alt {
+    $char: "\E010";
+  }
+  @if $filename == comment {
+    $char: "\E011";
+  }
+  @if $filename == credit-card {
+    $char: "\E012";
+  }
+  @if $filename == dot-circle {
+    $char: "\E013";
+  }
+  @if $filename == edit {
+    $char: "\E014";
+  }
+  @if $filename == exchange-alt {
+    $char: "\E015";
+  }
+  @if $filename == eye {
+    $char: "\E016";
+  }
+  @if $filename == file-alt {
+    $char: "\E017";
+  }
+  @if $filename == file-archive {
+    $char: "\E018";
+  }
+  @if $filename == folder-open {
+    $char: "\E019";
+  }
+  @if $filename == folder {
+    $char: "\E01A";
+  }
+  @if $filename == frown {
+    $char: "\E01B";
+  }
+  @if $filename == gift {
+    $char: "\E01C";
+  }
+  @if $filename == heart-fill {
+    $char: "\E01D";
+  }
+  @if $filename == heart {
+    $char: "\E01E";
+  }
+  @if $filename == home-lg-alt {
+    $char: "\E01F";
+  }
+  @if $filename == info-circle {
+    $char: "\E020";
+  }
+  @if $filename == level-up-alt {
+    $char: "\E021";
+  }
+  @if $filename == link {
+    $char: "\E022";
+  }
+  @if $filename == meh {
+    $char: "\E023";
+  }
+  @if $filename == pencil {
+    $char: "\E024";
+  }
+  @if $filename == plus {
+    $char: "\E025";
+  }
+  @if $filename == reply {
+    $char: "\E026";
+  }
+  @if $filename == search-plus {
+    $char: "\E027";
+  }
+  @if $filename == search {
+    $char: "\E028";
+  }
+  @if $filename == shopping-basket {
+    $char: "\E029";
+  }
+  @if $filename == sign-out-alt {
+    $char: "\E02A";
+  }
+  @if $filename == smile {
+    $char: "\E02B";
+  }
+  @if $filename == spinner {
+    $char: "\E02C";
+  }
+  @if $filename == square {
+    $char: "\E02D";
+  }
+  @if $filename == star {
+    $char: "\E02E";
+  }
+  @if $filename == sync-alt {
+    $char: "\E02F";
+  }
+  @if $filename == sync {
+    $char: "\E030";
+  }
+  @if $filename == tachometer-alt {
+    $char: "\E031";
+  }
+  @if $filename == th-list {
+    $char: "\E032";
+  }
+  @if $filename == th {
+    $char: "\E033";
+  }
+  @if $filename == thumbtack {
+    $char: "\E034";
+  }
+  @if $filename == times-circle {
+    $char: "\E035";
+  }
+  @if $filename == times {
+    $char: "\E036";
+  }
+  @if $filename == truck {
+    $char: "\E037";
+  }
+  @if $filename == user {
+    $char: "\E038";
+  }
+
+  @return $char;
+}
+
+@mixin wpcstore-icon($filename, $insert: before) {
+  &:#{$insert} {
+    content: themecustom-char($filename);
+  }
+}
