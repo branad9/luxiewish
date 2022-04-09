@@ -32,7 +32,7 @@ if ( ! class_exists( 'WPCstore' ) ) :
 			add_filter( 'wp_page_menu_args', array( $this, 'page_menu_args' ) );
 			add_filter( 'navigation_markup_template', array( $this, 'navigation_markup_template' ) );
 			add_action( 'enqueue_embed_scripts', array( $this, 'print_embed_styles' ) );
-			add_action( 'wp_head', [ $this, 'pingback' ] );
+			add_action( 'wp_head', array( $this, 'pingback' ) );
 		}
 
 		/**

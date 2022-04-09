@@ -85,5 +85,4 @@ add_action( 'wpcstore_page_after', 'wpcstore_display_comments', 10 );
  * @see  wpcstore_page_content()
  */
 add_action( 'homepage', 'wpcstore_homepage_content', 20 );
-//add_action('wpcstore_homepage', 'wpcstore_homepage_header', 10);
 add_action( 'wpcstore_homepage', 'wpcstore_page_content', 20 );

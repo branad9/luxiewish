@@ -803,7 +803,7 @@ table {
 
     #respond {
       padding: ms(1) ms(2);
-      border-radius: 5px;
+      border-radius: 4px;
     }
   }
 }
@@ -978,6 +978,7 @@ input[type="submit"],
 .button,
 .wc-block-grid__products .wc-block-grid__product .wp-block-button__link,
 .added_to_cart,
+.add_to_cart_button,
 .more-link {
   border: 1px solid var(--button_border);
   border-radius: 30px;
@@ -985,7 +986,7 @@ input[type="submit"],
   background-color: var(--button_background);
   color: var(--button_text);
   cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
-  padding: 0.563em ms(4);
+  padding: 10px 30px;
   text-decoration: none;
   font-weight: 600;
   text-shadow: none;
@@ -1023,10 +1024,6 @@ input[type="submit"],
 
   &:focus {
     outline: 2px solid var(--primary);
-  }
-
-  &.loading {
-    opacity: 0.4;
   }
 
   &.small {
@@ -1084,7 +1081,8 @@ input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly i
 
 select {
   padding: 0.563em;
-  padding-right: 30px;
+  padding-left: 20px;
+  padding-right: 40px;
   color: var(--text);
   border: 1px solid var(--border);
   border-radius: 30px;
@@ -1118,7 +1116,7 @@ textarea,
   -webkit-appearance: none;
   box-sizing: border-box;
   font-weight: 400;
-  border-radius: 5px;
+  border-radius: 4px;
 
   &:focus {
     border-color: var(--heading);

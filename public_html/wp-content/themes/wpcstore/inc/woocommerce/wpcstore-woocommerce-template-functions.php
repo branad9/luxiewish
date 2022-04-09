@@ -317,66 +317,6 @@ if ( ! function_exists( 'wpcstore_homepage_products' ) ) {
 	}
 }
 
-if ( ! function_exists( 'wpcstore_sticky_single_add_to_cart' ) ) {
-	/**
-	 * Sticky Add to Cart
-	 *
-	 * @since 2.3.0
-	 */
-	function wpcstore_sticky_single_add_to_cart() {
-		global $product;
-
-		if ( class_exists( 'WPCstore_Sticky_Add_to_Cart' ) || true !== get_theme_mod( 'wpcstore_sticky_add_to_cart' ) ) {
-			return;
-		}
-
-		if ( ! $product || ! is_product() ) {
-			return;
-		}
-
-		$show = false;
-
-		if ( $product->is_purchasable() && $product->is_in_stock() ) {
-			$show = true;
-		} elseif ( $product->is_type( 'external' ) ) {
-			$show = true;
-		}
-
-		if ( ! $show ) {
-			return;
-		}
-
-		$params = apply_filters(
-			'wpcstore_sticky_add_to_cart_params',
-			array(
-				'trigger_class' => 'entry-summary',
-			)
-		);
-
-		wp_localize_script( 'wpcstore-sticky-add-to-cart', 'wpcstore_sticky_add_to_cart_params', $params );
-
-		wp_enqueue_script( 'wpcstore-sticky-add-to-cart' );
-		?>
-        <section class="wpcstore-sticky-add-to-cart">
-            <div class="col-full">
-                <div class="wpcstore-sticky-add-to-cart__content">
-					<?php echo wp_kses_post( woocommerce_get_product_thumbnail() ); ?>
-                    <div class="wpcstore-sticky-add-to-cart__content-product-info">
-                        <span class="wpcstore-sticky-add-to-cart__content-title"><?php esc_html_e( 'You\'re viewing:', 'wpcstore' ); ?> <strong><?php the_title(); ?></strong></span>
-                        <span class="wpcstore-sticky-add-to-cart__content-price"><?php echo wp_kses_post( $product->get_price_html() ); ?></span>
-						<?php echo wp_kses_post( wc_get_rating_html( $product->get_average_rating() ) ); ?>
-                    </div>
-                    <a href="<?php echo esc_url( $product->add_to_cart_url() ); ?>"
-                       class="wpcstore-sticky-add-to-cart__content-button button alt" rel="nofollow">
-						<?php echo esc_attr( $product->add_to_cart_text() ); ?>
-                    </a>
-                </div>
-            </div>
-        </section><!-- .wpcstore-sticky-add-to-cart -->
-		<?php
-	}
-}
-
 if ( ! function_exists( 'wpcstore_header_wishlist' ) ) {
 	function wpcstore_header_wishlist() {
 		if ( wpcstore_is_woocommerce_activated() && function_exists( 'woosw_init' ) ) {
@@ -441,7 +381,7 @@ if ( ! function_exists( 'wpcstore_product_label' ) ) {
 
 				$percentage = $max_percentage;
 			} elseif ( ( $product->get_type() == 'simple' || $product->get_type() == 'external' ) ) {
-				$percentage = round( ( ( $product->get_regular_price() - $product->get_sale_price() ) / $product->get_regular_price() ) * 100 );
+				$percentage = round( ( ( $product->get_regular_price() - $product->get_price() ) / $product->get_regular_price() ) * 100 );
 			}
 
 			if ( $percentage ) {
@@ -505,9 +445,17 @@ if ( ! function_exists( 'wpcstore_woocommerce_get_product_description' ) ) {
 	}
 }
 
+if ( ! function_exists( 'wpcstore_quickview_button' ) ) {
+	function wpcstore_quickview_button() {
+		if ( function_exists( 'woosq_init' ) ) {
+			echo do_shortcode( '[woosq]' );
+		}
+	}
+}
+
 if ( ! function_exists( 'wpcstore_compare_button' ) ) {
 	function wpcstore_compare_button() {
-		if ( function_exists( 'wooscp_init' ) ) {
+		if ( function_exists( 'woosc_init' ) ) {
 			echo do_shortcode( '[woosc]' );
 		}
 	}

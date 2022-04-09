@@ -580,7 +580,7 @@
   }
 }
 
-@include susy-media (max-width $container-width) {
+@include susy-media(max-width $container-width) {
 
   .col-full {
     margin-left: ms(5);
@@ -589,7 +589,7 @@
   }
 }
 
-@include susy-media (max-width $handheld) {
+@include susy-media(max-width $handheld) {
 
   .col-full {
     margin-left: ms(2);

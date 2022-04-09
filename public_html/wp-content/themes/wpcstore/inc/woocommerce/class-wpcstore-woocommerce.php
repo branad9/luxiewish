@@ -113,14 +113,12 @@ if ( ! class_exists( 'WPCstore_WooCommerce' ) ) :
 
 			wp_register_script( 'wpcstore-header-cart', get_template_directory_uri() . '/assets/js/woocommerce/header-cart' . $suffix . '.js', array(), $wpcstore_version, true );
 			wp_enqueue_script( 'wpcstore-header-cart' );
+
 			if ( is_shop() || is_tax( 'product_cat' ) ) {
 				wp_register_script( 'wpcstore-toggle-layout', get_template_directory_uri() . '/assets/js/woocommerce/toggle-layout' . $suffix . '.js', array(), $wpcstore_version, true );
 				wp_enqueue_script( 'wpcstore-toggle-layout' );
 			}
 
-			if ( ! class_exists( 'WPCstore_Sticky_Add_to_Cart' ) && is_product() ) {
-				wp_register_script( 'wpcstore-sticky-add-to-cart', get_template_directory_uri() . '/assets/js/sticky-add-to-cart' . $suffix . '.js', array(), $wpcstore_version, true );
-			}
 			if ( function_exists( 'woosw_init' ) ) {
 				wp_enqueue_script( 'wpcstore-wishlist-addon', get_template_directory_uri() . '/assets/js/woocommerce/extensions/wishlist' . $suffix . '.js', array( 'jquery' ), $wpcstore_version, true );
 			}

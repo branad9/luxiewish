@@ -18,14 +18,3 @@ function wpcstore_is_product_archive() {
 	}
 }
 
-if ( ! function_exists( 'wpcstore_woosw_color_default' ) ) {
-	function wpcstore_woosw_color_default() {
-		return '#00CBB4';
-	}
-}
-
-if ( ! function_exists( 'wpcstore_wooscp_bar_btn_color_default' ) ) {
-	function wpcstore_wooscp_bar_btn_color_default() {
-		return '#00CBB4';
-	}
-}

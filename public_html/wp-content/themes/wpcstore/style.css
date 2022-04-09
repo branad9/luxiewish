@@ -3,10 +3,10 @@ Theme Name:   WPCstore
 Theme URI:    https://wpclever.net/downloads/wpcstore
 Author:       WPClever
 Author URI:   https://wpclever.net/
-Description:  From a popular author of a good number of powerful, flexible, and exquisite plugins for WooCommerce websites and stores, WPClever presents the very first exclusive theme for online businesses - WPCstore. Integrated with a great deal of awesome features from WPC plugins trusted by hundreds of thousands of users on WordPress, WPCstore brings about an easier way of running your store, enhancing the experience, and expanding your business. This well-coded, sleek, user-friendly, and responsive theme can do wonders for online stores, even exceed your expectations. Get rid of your pains concerning incompatibility, bug-fixing, asynchronous performance, etc and enjoy a higher stability, security, and harmony with WPCstore.
-Version:      1.0.5
-Tested up to: 5.7.2
-Requires PHP: 5.6.0
+Description:  From a popular author of a good number of powerful, flexible, and exquisite plugins for WooCommerce websites and stores, WPClever presents the very first exclusive theme for online businesses - WPCstore. Integrated with a great deal of awesome features from WPC plugins trusted by hundreds of thousands of users on WordPress, WPCstore brings about an easier way of running your store, enhancing the experience, and expanding your business. This well-coded, sleek, user-friendly, and responsive theme can do wonders for online stores, even exceed your expectations. Get rid of your pains concerning incompatibility, bug-fixing, asynchronous performance, etc and enjoy a higher stability, security, and harmony with WPCstore. See demo here https://demo.wpclever.net/wpcstore/
+Version:      1.2.5
+Tested up to: 5.8
+Requires PHP: 5.6
 License:      GNU General Public License v3 or later
 License URI:  https://www.gnu.org/licenses/gpl-3.0.html
 Text Domain:  wpcstore
@@ -1155,7 +1155,7 @@ table tbody h2 a {
 }
 #comments .comment-list #respond {
   padding: 1em 1.41575em;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 .comment-content a {
@@ -1293,6 +1293,7 @@ input[type=submit],
 .button,
 .wc-block-grid__products .wc-block-grid__product .wp-block-button__link,
 .added_to_cart,
+.add_to_cart_button,
 .more-link {
   border: 1px solid var(--button_border);
   border-radius: 30px;
@@ -1301,7 +1302,7 @@ input[type=submit],
   color: var(--button_text);
   cursor: pointer;
   /* Improves usability and consistency of cursor style between image-type 'input' and others */
-  padding: 0.563em 2.2906835em;
+  padding: 10px 30px;
   text-decoration: none;
   font-weight: 600;
   text-shadow: none;
@@ -1318,6 +1319,7 @@ input[type=submit]::after,
 .button::after,
 .wc-block-grid__products .wc-block-grid__product .wp-block-button__link::after,
 .added_to_cart::after,
+.add_to_cart_button::after,
 .more-link::after {
   display: none;
 }
@@ -1334,6 +1336,8 @@ input[type=submit].alt,
 .wc-block-grid__products .wc-block-grid__product .wp-block-button__link.alt,
 .added_to_cart.cta,
 .added_to_cart.alt,
+.add_to_cart_button.cta,
+.add_to_cart_button.alt,
 .more-link.cta,
 .more-link.alt {
   background-color: var(--button_alt_background);
@@ -1353,6 +1357,8 @@ input[type=submit].alt:hover,
 .wc-block-grid__products .wc-block-grid__product .wp-block-button__link.alt:hover,
 .added_to_cart.cta:hover,
 .added_to_cart.alt:hover,
+.add_to_cart_button.cta:hover,
+.add_to_cart_button.alt:hover,
 .more-link.cta:hover,
 .more-link.alt:hover {
   background-color: var(--button_background_hover);
@@ -1365,6 +1371,7 @@ input[type=submit]:hover,
 .button:hover,
 .wc-block-grid__products .wc-block-grid__product .wp-block-button__link:hover,
 .added_to_cart:hover,
+.add_to_cart_button:hover,
 .more-link:hover {
   color: #fff;
   background-color: var(--button_background_hover);
@@ -1377,6 +1384,7 @@ input[type=submit]:focus-visible,
 .button:focus-visible,
 .wc-block-grid__products .wc-block-grid__product .wp-block-button__link:focus-visible,
 .added_to_cart:focus-visible,
+.add_to_cart_button:focus-visible,
 .more-link:focus-visible {
   outline: none;
 }
@@ -1387,18 +1395,9 @@ input[type=submit]:focus,
 .button:focus,
 .wc-block-grid__products .wc-block-grid__product .wp-block-button__link:focus,
 .added_to_cart:focus,
+.add_to_cart_button:focus,
 .more-link:focus {
   outline: 2px solid var(--primary);
-}
-button.loading,
-input[type=button].loading,
-input[type=reset].loading,
-input[type=submit].loading,
-.button.loading,
-.wc-block-grid__products .wc-block-grid__product .wp-block-button__link.loading,
-.added_to_cart.loading,
-.more-link.loading {
-  opacity: 0.4;
 }
 button.small,
 input[type=button].small,
@@ -1407,6 +1406,7 @@ input[type=submit].small,
 .button.small,
 .wc-block-grid__products .wc-block-grid__product .wp-block-button__link.small,
 .added_to_cart.small,
+.add_to_cart_button.small,
 .more-link.small {
   padding: 0.5407911001em 0.875em;
   font-size: 0.875em;
@@ -1424,6 +1424,8 @@ input[type=submit]:disabled,
 .wc-block-grid__products .wc-block-grid__product .wp-block-button__link:disabled,
 .added_to_cart.disabled,
 .added_to_cart:disabled,
+.add_to_cart_button.disabled,
+.add_to_cart_button:disabled,
 .more-link.disabled,
 .more-link:disabled {
   opacity: 0.5 !important;
@@ -1442,6 +1444,8 @@ input[type=submit]:disabled:hover,
 .wc-block-grid__products .wc-block-grid__product .wp-block-button__link:disabled:hover,
 .added_to_cart.disabled:hover,
 .added_to_cart:disabled:hover,
+.add_to_cart_button.disabled:hover,
+.add_to_cart_button:disabled:hover,
 .more-link.disabled:hover,
 .more-link:disabled:hover {
   opacity: 0.5 !important;
@@ -1494,7 +1498,8 @@ input::-moz-focus-inner {
 
 select {
   padding: 0.563em;
-  padding-right: 30px;
+  padding-left: 20px;
+  padding-right: 40px;
   color: var(--text);
   border: 1px solid var(--border);
   border-radius: 30px;
@@ -1527,7 +1532,7 @@ textarea,
   -webkit-appearance: none;
   box-sizing: border-box;
   font-weight: 400;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 input[type=text]:focus,
 input[type=number]:focus,

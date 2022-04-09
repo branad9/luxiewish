@@ -1,10 +1,10 @@
 === WPCstore ===
 Contributors: wpclever
 Tags: e-commerce, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, threaded-comments, rtl-language-support, footer-widgets, sticky-post, theme-options, editor-style
-Requires at least: 5.3.4
-Tested up to: 5.7.2
-Stable tag: 1.0.5
-Version: 1.0.5
+Requires at least: 5.4
+Tested up to: 5.8
+Stable tag: 1.2.5
+Version: 1.2.5
 WC requires at least: 4.2
 
 == Description ==
@@ -57,8 +57,26 @@ Privacy Policy for the Google Fonts API: https://developers.google.com/fonts/faq
 
 == Changelog ==
 
+= 1.2.5 =
+* Fixed: Minor CSS issues
+
+= 1.2.4 =
+* Fixed: Minor CSS issues
+
+= 1.2.0 =
+* Updated: Optimized the code
+
+= 1.1.1 =
+* Fixed: Minor CSS issues
+
+= 1.1.0 =
+* Updated: Compatible with WordPress 5.8 & WooCommerce 5.5.2
+
+= 1.0.6 =
+* Fixed: WPC plugins compatibility
+
 = 1.0.5 =
-* Fixed minor CSS issues
+* Fixed: Minor CSS issues
 
 = 1.0.4 =
 * Initial release

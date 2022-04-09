@@ -124,16 +124,16 @@
 }
 
 .fa-spin {
-  -webkit-animation: fa-spin 2s infinite linear;
-          animation: fa-spin 2s infinite linear;
+  -webkit-animation: wpcstore-spin 2s infinite linear;
+          animation: wpcstore-spin 2s infinite linear;
 }
 
 .fa-pulse {
-  -webkit-animation: fa-spin 1s infinite steps(8);
-          animation: fa-spin 1s infinite steps(8);
+  -webkit-animation: wpcstore-spin 1s infinite steps(8);
+          animation: wpcstore-spin 1s infinite steps(8);
 }
 
-@-webkit-keyframes fa-spin {
+@-webkit-keyframes wpcstore-spin {
   0% {
     transform: rotate(0deg);
   }
@@ -142,7 +142,7 @@
   }
 }
 
-@keyframes fa-spin {
+@keyframes wpcstore-spin {
   0% {
     transform: rotate(0deg);
   }

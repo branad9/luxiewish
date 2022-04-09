@@ -187,7 +187,7 @@ if ( ! class_exists( 'WPCstore_Customizer' ) ) :
 			$wp_customize->add_setting(
 				'wpcstore_primary_color',
 				array(
-					'default'           => apply_filters( 'wpcstore_default_heading_color', '#00CBB4' ),
+					'default'           => apply_filters( 'wpcstore_default_primary_color', '#00CBB4' ),
 					'sanitize_callback' => 'sanitize_hex_color',
 				)
 			);

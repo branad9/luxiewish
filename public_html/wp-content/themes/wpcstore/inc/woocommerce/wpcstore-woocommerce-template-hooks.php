@@ -38,10 +38,8 @@ add_action( 'woocommerce_before_shop_loop', 'wpcstore_sorting_wrapper_close', 31
  *
  * @see wpcstore_edit_post_link()
  * @see wpcstore_upsell_display()
- * @see wpcstore_sticky_single_add_to_cart()
  */
 remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_sale_flash', 10 );
-
 remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5 );
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15 );
 
@@ -51,11 +49,37 @@ add_action( 'woocommerce_before_shop_loop_item_title', 'wpcstore_product_label_s
 add_action( 'woocommerce_after_shop_loop_item_title', 'wpcstore_woocommerce_get_product_description', 15 );
 add_action( 'woocommerce_single_product_summary', 'wpcstore_edit_post_link', 60 );
 add_action( 'woocommerce_after_single_product_summary', 'wpcstore_upsell_display', 15 );
-add_action( 'wpcstore_after_footer', 'wpcstore_sticky_single_add_to_cart', 999 );
+add_action( 'woocommerce_after_add_to_cart_button', 'wpcstore_compare_button', 20 );
+add_action( 'woocommerce_after_add_to_cart_button', 'wpcstore_wishlist_button', 30 );
+
+/**
+ * WPC plugins compatible
+ */
+// quick view
+add_filter( 'woosq_button_position', function () {
+	return 'after_add_to_cart';
+} );
+
+// compare
+add_filter( 'woosc_button_position_single', '__return_false' );
+add_filter( 'woosc_button_position_archive', function () {
+	return 'after_add_to_cart';
+} );
+add_filter( 'woosc_bar_bg_color_default', function () {
+	return '#222222';
+}, 10 );
+add_filter( 'woosc_bar_btn_color_default', function () {
+	return '#00CBB4';
+}, 10 );
+
+// wishlist
 add_filter( 'woosw_button_position_single', '__return_false' );
-add_filter( 'filter_wooscp_button_single', '__return_false' );
-add_action( 'woocommerce_after_add_to_cart_button', 'wpcstore_wishlist_button', 20 );
-add_action( 'woocommerce_after_add_to_cart_button', 'wpcstore_compare_button', 30 );
+add_filter( 'woosw_button_position_archive', function () {
+	return 'after_add_to_cart';
+} );
+add_filter( 'woosw_color_default', function () {
+	return '#00CBB4';
+}, 10 );
 
 /**
  * Header
@@ -73,7 +97,3 @@ add_action( 'wpcstore_header', 'wpcstore_header_cart', 60 );
  * @see wpcstore_cart_link_fragment()
  */
 add_filter( 'woocommerce_add_to_cart_fragments', 'wpcstore_cart_link_fragment' );
-
-
-add_filter( 'wooscp_bar_btn_color_default', 'wpcstore_wooscp_bar_btn_color_default', 10 );
-add_filter( 'woosw_color_default', 'wpcstore_woosw_color_default', 10 );

@@ -27,6 +27,7 @@ $wpcstore = (object) array(
 require 'inc/wpcstore-functions.php';
 require 'inc/wpcstore-template-hooks.php';
 require 'inc/wpcstore-template-functions.php';
+require 'inc/wpcstore-notice.php';
 require 'inc/wordpress-shims.php';
 
 if ( wpcstore_is_woocommerce_activated() ) {

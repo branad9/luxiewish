@@ -2,19 +2,22 @@
 @font-face {
   font-family: "wpcstore-icon";
   src: url("../../../assets/fonts/wpcstore-icon.eot");
-  src: url("../../../assets/fonts/wpcstore-icon.eot?#iefix") format("eot"), url("../../../assets/fonts/wpcstore-icon.woff2") format("woff2"), url("../../../assets/fonts/wpcstore-icon.woff") format("woff"), url("../../../assets/fonts/wpcstore-icon.ttf") format("truetype"), url("../../../assets/fonts/wpcstore-icon.svg#wpcstore-icon") format("svg");
+  src: url("../../../assets/fonts/wpcstore-icon.eot#iefix") format("embedded-opentype"), url("../../../assets/fonts/wpcstore-icon.ttf") format("truetype"), url("../../../assets/fonts/wpcstore-icon.woff") format("woff"), url("../../../assets/fonts/wpcstore-icon.svg#wpcstore-icon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
-.fa-spin {
-  -webkit-animation: fa-spin 2s infinite linear;
-          animation: fa-spin 2s infinite linear;
-}
-
-.fa-pulse {
-  -webkit-animation: fa-spin 1s infinite steps(8);
-          animation: fa-spin 1s infinite steps(8);
+.wpcstore-spin {
+  -webkit-animation: wpcstore-spin 2s infinite linear;
+          animation: wpcstore-spin 2s infinite linear;
 }
 
-@-webkit-keyframes fa-spin {
+.wpcstore-pulse {
+  -webkit-animation: wpcstore-spin 1s infinite steps(8);
+          animation: wpcstore-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes wpcstore-spin {
   0% {
     transform: rotate(0deg);
   }
@@ -23,7 +26,7 @@
   }
 }
 
-@keyframes fa-spin {
+@keyframes wpcstore-spin {
   0% {
     transform: rotate(0deg);
   }
@@ -31,16 +34,1152 @@
     transform: rotate(-360deg);
   }
 }
-[class*=wpcstore-icon-] {
+[class^=wpcstore-icon-], [class*=" wpcstore-icon-"] {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
+}
+
+.wpcstore-icon-activity:before {
+  content: "";
+}
+
+.wpcstore-icon-airplay:before {
+  content: "";
+}
+
+.wpcstore-icon-alert-circle:before {
+  content: "";
+}
+
+.wpcstore-icon-alert-octagon:before {
+  content: "";
+}
+
+.wpcstore-icon-alert-triangle:before {
+  content: "";
+}
+
+.wpcstore-icon-align-center:before {
+  content: "";
+}
+
+.wpcstore-icon-align-justify:before {
+  content: "";
+}
+
+.wpcstore-icon-align-left:before {
+  content: "";
+}
+
+.wpcstore-icon-align-right:before {
+  content: "";
+}
+
+.wpcstore-icon-anchor:before {
+  content: "";
+}
+
+.wpcstore-icon-aperture:before {
+  content: "";
+}
+
+.wpcstore-icon-archive:before {
+  content: "";
+}
+
+.wpcstore-icon-arrow-down-circle:before {
+  content: "";
+}
+
+.wpcstore-icon-arrow-down-left:before {
+  content: "";
+}
+
+.wpcstore-icon-arrow-down-right:before {
+  content: "";
+}
+
+.wpcstore-icon-arrow-down:before {
+  content: "";
+}
+
+.wpcstore-icon-arrow-left-circle:before {
+  content: "";
+}
+
+.wpcstore-icon-arrow-left:before {
+  content: "";
+}
+
+.wpcstore-icon-arrow-right-circle:before {
+  content: "";
+}
+
+.wpcstore-icon-arrow-right:before {
+  content: "";
+}
+
+.wpcstore-icon-arrow-up-circle:before {
+  content: "";
+}
+
+.wpcstore-icon-arrow-up-left:before {
+  content: "";
+}
+
+.wpcstore-icon-arrow-up-right:before {
+  content: "";
+}
+
+.wpcstore-icon-arrow-up:before {
+  content: "";
+}
+
+.wpcstore-icon-at-sign:before {
+  content: "";
+}
+
+.wpcstore-icon-award:before {
+  content: "";
+}
+
+.wpcstore-icon-bar-chart-2:before {
+  content: "";
+}
+
+.wpcstore-icon-bar-chart:before {
+  content: "";
+}
+
+.wpcstore-icon-battery-charging:before {
+  content: "";
+}
+
+.wpcstore-icon-battery:before {
+  content: "";
+}
+
+.wpcstore-icon-bell-off:before {
+  content: "";
+}
+
+.wpcstore-icon-bell:before {
+  content: "";
+}
+
+.wpcstore-icon-bluetooth:before {
+  content: "";
+}
+
+.wpcstore-icon-bold:before {
+  content: "";
+}
+
+.wpcstore-icon-book-open:before {
+  content: "";
+}
+
+.wpcstore-icon-book:before {
+  content: "";
+}
+
+.wpcstore-icon-bookmark:before {
+  content: "";
+}
+
+.wpcstore-icon-box:before {
+  content: "";
+}
+
+.wpcstore-icon-briefcase:before {
+  content: "";
+}
+
+.wpcstore-icon-calendar:before {
+  content: "";
+}
+
+.wpcstore-icon-camera-off:before {
+  content: "";
+}
+
+.wpcstore-icon-camera:before {
+  content: "";
+}
+
+.wpcstore-icon-cast:before {
+  content: "";
+}
+
+.wpcstore-icon-check-circle:before {
+  content: "";
+}
+
+.wpcstore-icon-check-square:before {
+  content: "";
+}
+
+.wpcstore-icon-check:before {
+  content: "";
+}
+
+.wpcstore-icon-chevron-down:before {
+  content: "";
+}
+
+.wpcstore-icon-chevron-left:before {
+  content: "";
+}
+
+.wpcstore-icon-chevron-right:before {
+  content: "";
+}
+
+.wpcstore-icon-chevron-up:before {
+  content: "";
+}
+
+.wpcstore-icon-chevrons-down:before {
+  content: "";
+}
+
+.wpcstore-icon-chevrons-left:before {
+  content: "";
+}
+
+.wpcstore-icon-chevrons-right:before {
+  content: "";
+}
+
+.wpcstore-icon-chevrons-up:before {
+  content: "";
+}
+
+.wpcstore-icon-chrome:before {
+  content: "";
+}
+
+.wpcstore-icon-circle:before {
+  content: "";
+}
+
+.wpcstore-icon-clipboard:before {
+  content: "";
+}
+
+.wpcstore-icon-clock:before {
+  content: "";
+}
+
+.wpcstore-icon-cloud-drizzle:before {
+  content: "";
+}
+
+.wpcstore-icon-cloud-lightning:before {
+  content: "";
+}
+
+.wpcstore-icon-cloud-off:before {
+  content: "";
+}
+
+.wpcstore-icon-cloud-rain:before {
+  content: "";
+}
+
+.wpcstore-icon-cloud-snow:before {
+  content: "";
+}
+
+.wpcstore-icon-cloud:before {
+  content: "";
+}
+
+.wpcstore-icon-code:before {
+  content: "";
+}
+
+.wpcstore-icon-codepen:before {
+  content: "";
+}
+
+.wpcstore-icon-codesandbox:before {
+  content: "";
+}
+
+.wpcstore-icon-coffee:before {
+  content: "";
+}
+
+.wpcstore-icon-columns:before {
+  content: "";
+}
+
+.wpcstore-icon-command:before {
+  content: "";
+}
+
+.wpcstore-icon-compass:before {
+  content: "";
+}
+
+.wpcstore-icon-copy:before {
+  content: "";
+}
+
+.wpcstore-icon-corner-down-left:before {
+  content: "";
+}
+
+.wpcstore-icon-corner-down-right:before {
+  content: "";
+}
+
+.wpcstore-icon-corner-left-down:before {
+  content: "";
+}
+
+.wpcstore-icon-corner-left-up:before {
+  content: "";
+}
+
+.wpcstore-icon-corner-right-down:before {
+  content: "";
+}
+
+.wpcstore-icon-corner-right-up:before {
+  content: "";
+}
+
+.wpcstore-icon-corner-up-left:before {
+  content: "";
+}
+
+.wpcstore-icon-corner-up-right:before {
+  content: "";
+}
+
+.wpcstore-icon-cpu:before {
+  content: "";
+}
+
+.wpcstore-icon-crop:before {
+  content: "";
+}
+
+.wpcstore-icon-crosshair:before {
+  content: "";
+}
+
+.wpcstore-icon-database:before {
+  content: "";
+}
+
+.wpcstore-icon-delete:before {
+  content: "";
+}
+
+.wpcstore-icon-disc:before {
+  content: "";
+}
+
+.wpcstore-icon-divide-circle:before {
+  content: "";
+}
+
+.wpcstore-icon-divide-square:before {
+  content: "";
+}
+
+.wpcstore-icon-divide:before {
+  content: "";
+}
+
+.wpcstore-icon-dollar-sign:before {
+  content: "";
+}
+
+.wpcstore-icon-download-cloud:before {
+  content: "";
+}
+
+.wpcstore-icon-download:before {
+  content: "";
+}
+
+.wpcstore-icon-dribbble:before {
+  content: "";
+}
+
+.wpcstore-icon-droplet:before {
+  content: "";
+}
+
+.wpcstore-icon-edit-2:before {
+  content: "";
+}
+
+.wpcstore-icon-edit-3:before {
+  content: "";
+}
+
+.wpcstore-icon-edit:before {
+  content: "";
+}
+
+.wpcstore-icon-external-link:before {
+  content: "";
+}
+
+.wpcstore-icon-eye-off:before {
+  content: "";
+}
+
+.wpcstore-icon-eye:before {
+  content: "";
+}
+
+.wpcstore-icon-facebook:before {
+  content: "";
+}
+
+.wpcstore-icon-fast-forward:before {
+  content: "";
+}
+
+.wpcstore-icon-feather:before {
+  content: "";
+}
+
+.wpcstore-icon-figma:before {
+  content: "";
+}
+
+.wpcstore-icon-file-minus:before {
+  content: "";
+}
+
+.wpcstore-icon-file-plus:before {
+  content: "";
+}
+
+.wpcstore-icon-file-text:before {
+  content: "";
+}
+
+.wpcstore-icon-file:before {
+  content: "";
+}
+
+.wpcstore-icon-film:before {
+  content: "";
+}
+
+.wpcstore-icon-filter:before {
+  content: "";
+}
+
+.wpcstore-icon-flag:before {
+  content: "";
+}
+
+.wpcstore-icon-folder-minus:before {
+  content: "";
+}
+
+.wpcstore-icon-folder-plus:before {
+  content: "";
+}
+
+.wpcstore-icon-folder:before {
+  content: "";
+}
+
+.wpcstore-icon-framer:before {
+  content: "";
+}
+
+.wpcstore-icon-frown:before {
+  content: "";
+}
+
+.wpcstore-icon-gift:before {
+  content: "";
+}
+
+.wpcstore-icon-git-branch:before {
+  content: "";
+}
+
+.wpcstore-icon-git-commit:before {
+  content: "";
+}
+
+.wpcstore-icon-git-merge:before {
+  content: "";
+}
+
+.wpcstore-icon-git-pull-request:before {
+  content: "";
+}
+
+.wpcstore-icon-github:before {
+  content: "";
+}
+
+.wpcstore-icon-gitlab:before {
+  content: "";
+}
+
+.wpcstore-icon-globe:before {
+  content: "";
+}
+
+.wpcstore-icon-grid:before {
+  content: "";
+}
+
+.wpcstore-icon-hard-drive:before {
+  content: "";
+}
+
+.wpcstore-icon-hash:before {
+  content: "";
+}
+
+.wpcstore-icon-headphones:before {
+  content: "";
+}
+
+.wpcstore-icon-heart:before {
+  content: "";
+}
+
+.wpcstore-icon-help-circle:before {
+  content: "";
+}
+
+.wpcstore-icon-hexagon:before {
+  content: "";
+}
+
+.wpcstore-icon-home:before {
+  content: "";
+}
+
+.wpcstore-icon-image:before {
+  content: "";
+}
+
+.wpcstore-icon-inbox:before {
+  content: "";
+}
+
+.wpcstore-icon-info:before {
+  content: "";
+}
+
+.wpcstore-icon-instagram:before {
+  content: "";
+}
+
+.wpcstore-icon-italic:before {
+  content: "";
+}
+
+.wpcstore-icon-key:before {
+  content: "";
+}
+
+.wpcstore-icon-layers:before {
+  content: "";
+}
+
+.wpcstore-icon-layout:before {
+  content: "";
+}
+
+.wpcstore-icon-life-buoy:before {
+  content: "";
+}
+
+.wpcstore-icon-link-2:before {
+  content: "";
+}
+
+.wpcstore-icon-link:before {
+  content: "";
+}
+
+.wpcstore-icon-linkedin:before {
+  content: "";
+}
+
+.wpcstore-icon-list:before {
+  content: "";
+}
+
+.wpcstore-icon-loader:before {
+  content: "";
+}
+
+.wpcstore-icon-lock:before {
+  content: "";
+}
+
+.wpcstore-icon-log-in:before {
+  content: "";
+}
+
+.wpcstore-icon-log-out:before {
+  content: "";
+}
+
+.wpcstore-icon-mail:before {
+  content: "";
+}
+
+.wpcstore-icon-map-pin:before {
+  content: "";
+}
+
+.wpcstore-icon-map:before {
+  content: "";
+}
+
+.wpcstore-icon-maximize-2:before {
+  content: "";
+}
+
+.wpcstore-icon-maximize:before {
+  content: "";
+}
+
+.wpcstore-icon-meh:before {
+  content: "";
+}
+
+.wpcstore-icon-menu:before {
+  content: "";
+}
+
+.wpcstore-icon-message-circle:before {
+  content: "";
+}
+
+.wpcstore-icon-message-square:before {
+  content: "";
+}
+
+.wpcstore-icon-mic-off:before {
+  content: "";
+}
+
+.wpcstore-icon-mic:before {
+  content: "";
+}
+
+.wpcstore-icon-minimize-2:before {
+  content: "";
+}
+
+.wpcstore-icon-minimize:before {
+  content: "";
+}
+
+.wpcstore-icon-minus-circle:before {
+  content: "";
+}
+
+.wpcstore-icon-minus-square:before {
+  content: "";
+}
+
+.wpcstore-icon-minus:before {
+  content: "";
+}
+
+.wpcstore-icon-monitor:before {
+  content: "";
+}
+
+.wpcstore-icon-moon:before {
+  content: "";
+}
+
+.wpcstore-icon-more-horizontal:before {
+  content: "";
+}
+
+.wpcstore-icon-more-vertical:before {
+  content: "";
+}
+
+.wpcstore-icon-mouse-pointer:before {
+  content: "";
+}
+
+.wpcstore-icon-move:before {
+  content: "";
+}
+
+.wpcstore-icon-music:before {
+  content: "";
+}
+
+.wpcstore-icon-navigation-2:before {
+  content: "";
+}
+
+.wpcstore-icon-navigation:before {
+  content: "";
+}
+
+.wpcstore-icon-octagon:before {
+  content: "";
+}
+
+.wpcstore-icon-package:before {
+  content: "";
+}
+
+.wpcstore-icon-paperclip:before {
+  content: "";
+}
+
+.wpcstore-icon-pause-circle:before {
+  content: "";
+}
+
+.wpcstore-icon-pause:before {
+  content: "";
+}
+
+.wpcstore-icon-pen-tool:before {
+  content: "";
+}
+
+.wpcstore-icon-percent:before {
+  content: "";
+}
+
+.wpcstore-icon-phone-call:before {
+  content: "";
+}
+
+.wpcstore-icon-phone-forwarded:before {
+  content: "";
+}
+
+.wpcstore-icon-phone-incoming:before {
+  content: "";
+}
+
+.wpcstore-icon-phone-missed:before {
+  content: "";
+}
+
+.wpcstore-icon-phone-off:before {
+  content: "";
+}
+
+.wpcstore-icon-phone-outgoing:before {
+  content: "";
+}
+
+.wpcstore-icon-phone:before {
+  content: "";
+}
+
+.wpcstore-icon-pie-chart:before {
+  content: "";
+}
+
+.wpcstore-icon-play-circle:before {
+  content: "";
+}
+
+.wpcstore-icon-play:before {
+  content: "";
+}
+
+.wpcstore-icon-plus-circle:before {
+  content: "";
+}
+
+.wpcstore-icon-plus-square:before {
+  content: "";
+}
+
+.wpcstore-icon-plus:before {
+  content: "";
+}
+
+.wpcstore-icon-pocket:before {
+  content: "";
+}
+
+.wpcstore-icon-power:before {
+  content: "";
+}
+
+.wpcstore-icon-printer:before {
+  content: "";
+}
+
+.wpcstore-icon-radio:before {
+  content: "";
+}
+
+.wpcstore-icon-refresh-ccw:before {
+  content: "";
+}
+
+.wpcstore-icon-refresh-cw:before {
+  content: "";
+}
+
+.wpcstore-icon-repeat:before {
+  content: "";
+}
+
+.wpcstore-icon-rewind:before {
+  content: "";
+}
+
+.wpcstore-icon-rotate-ccw:before {
+  content: "";
+}
+
+.wpcstore-icon-rotate-cw:before {
+  content: "";
+}
+
+.wpcstore-icon-rss:before {
+  content: "";
+}
+
+.wpcstore-icon-save:before {
+  content: "";
+}
+
+.wpcstore-icon-scissors:before {
+  content: "";
+}
+
+.wpcstore-icon-search:before {
+  content: "";
+}
+
+.wpcstore-icon-send:before {
+  content: "";
+}
+
+.wpcstore-icon-server:before {
+  content: "";
+}
+
+.wpcstore-icon-settings:before {
+  content: "";
+}
+
+.wpcstore-icon-share-2:before {
+  content: "";
+}
+
+.wpcstore-icon-share:before {
+  content: "";
+}
+
+.wpcstore-icon-shield-off:before {
+  content: "";
+}
+
+.wpcstore-icon-shield:before {
+  content: "";
+}
+
+.wpcstore-icon-shopping-bag:before {
+  content: "";
+}
+
+.wpcstore-icon-shopping-cart:before {
+  content: "";
+}
+
+.wpcstore-icon-shuffle:before {
+  content: "";
+}
+
+.wpcstore-icon-sidebar:before {
+  content: "";
+}
+
+.wpcstore-icon-skip-back:before {
+  content: "";
+}
+
+.wpcstore-icon-skip-forward:before {
+  content: "";
+}
+
+.wpcstore-icon-slack:before {
+  content: "";
+}
+
+.wpcstore-icon-slash:before {
+  content: "";
+}
+
+.wpcstore-icon-sliders:before {
+  content: "";
+}
+
+.wpcstore-icon-smartphone:before {
+  content: "";
+}
+
+.wpcstore-icon-smile:before {
+  content: "";
+}
+
+.wpcstore-icon-speaker:before {
+  content: "";
+}
+
+.wpcstore-icon-square:before {
+  content: "";
+}
+
+.wpcstore-icon-star:before {
+  content: "";
+}
+
+.wpcstore-icon-stop-circle:before {
+  content: "";
+}
+
+.wpcstore-icon-sun:before {
+  content: "";
+}
+
+.wpcstore-icon-sunrise:before {
+  content: "";
+}
+
+.wpcstore-icon-sunset:before {
+  content: "";
+}
+
+.wpcstore-icon-tablet:before {
+  content: "";
+}
+
+.wpcstore-icon-tag:before {
+  content: "";
+}
+
+.wpcstore-icon-target:before {
+  content: "";
+}
+
+.wpcstore-icon-terminal:before {
+  content: "";
+}
+
+.wpcstore-icon-thermometer:before {
+  content: "";
+}
+
+.wpcstore-icon-thumbs-down:before {
+  content: "";
+}
+
+.wpcstore-icon-thumbs-up:before {
+  content: "";
+}
+
+.wpcstore-icon-toggle-left:before {
+  content: "";
+}
+
+.wpcstore-icon-toggle-right:before {
+  content: "";
+}
+
+.wpcstore-icon-tool:before {
+  content: "";
+}
+
+.wpcstore-icon-trash-2:before {
+  content: "";
+}
+
+.wpcstore-icon-trash:before {
+  content: "";
+}
+
+.wpcstore-icon-trello:before {
+  content: "";
+}
+
+.wpcstore-icon-trending-down:before {
+  content: "";
+}
+
+.wpcstore-icon-trending-up:before {
+  content: "";
+}
+
+.wpcstore-icon-triangle:before {
+  content: "";
+}
+
+.wpcstore-icon-truck:before {
+  content: "";
+}
+
+.wpcstore-icon-tv:before {
+  content: "";
+}
+
+.wpcstore-icon-twitch:before {
+  content: "";
+}
+
+.wpcstore-icon-twitter:before {
+  content: "";
+}
+
+.wpcstore-icon-umbrella:before {
+  content: "";
+}
+
+.wpcstore-icon-underline:before {
+  content: "";
+}
+
+.wpcstore-icon-unlock:before {
+  content: "";
+}
+
+.wpcstore-icon-upload-cloud:before {
+  content: "";
+}
+
+.wpcstore-icon-upload:before {
+  content: "";
+}
+
+.wpcstore-icon-user-check:before {
+  content: "";
+}
+
+.wpcstore-icon-user-minus:before {
+  content: "";
+}
+
+.wpcstore-icon-user-plus:before {
+  content: "";
+}
+
+.wpcstore-icon-user-x:before {
+  content: "";
+}
+
+.wpcstore-icon-user:before {
+  content: "";
+}
+
+.wpcstore-icon-users:before {
+  content: "";
+}
+
+.wpcstore-icon-video-off:before {
+  content: "";
+}
+
+.wpcstore-icon-video:before {
+  content: "";
+}
+
+.wpcstore-icon-voicemail:before {
+  content: "";
+}
+
+.wpcstore-icon-volume-1:before {
+  content: "";
+}
+
+.wpcstore-icon-volume-2:before {
+  content: "";
+}
+
+.wpcstore-icon-volume-x:before {
+  content: "";
+}
+
+.wpcstore-icon-volume:before {
+  content: "";
+}
+
+.wpcstore-icon-watch:before {
+  content: "";
+}
+
+.wpcstore-icon-wifi-off:before {
+  content: "";
+}
+
+.wpcstore-icon-wifi:before {
+  content: "";
+}
+
+.wpcstore-icon-wind:before {
+  content: "";
+}
+
+.wpcstore-icon-x-circle:before {
+  content: "";
+}
+
+.wpcstore-icon-x-octagon:before {
+  content: "";
+}
+
+.wpcstore-icon-x-square:before {
+  content: "";
+}
+
+.wpcstore-icon-x:before {
+  content: "";
+}
+
+.wpcstore-icon-youtube:before {
+  content: "";
+}
+
+.wpcstore-icon-zap-off:before {
+  content: "";
+}
+
+.wpcstore-icon-zap:before {
+  content: "";
+}
+
+.wpcstore-icon-zoom-in:before {
+  content: "";
+}
+
+.wpcstore-icon-zoom-out:before {
+  content: "";
 }
 
 .site-search .widget_product_search form input[type=search],
@@ -50,68 +1189,70 @@
 
 #comments .comment-list .bypostauthor > .comment-body cite a::after {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
   margin-right: 0.5407911001em;
 }
 #comments .comment-list .reply a::after {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  content: "";
   display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
   margin-right: 0.5407911001em;
 }
 #comments .comment-list .reply a.comment-edit-link::after {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
 }
 
 #respond #cancel-comment-reply-link::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
   display: block;
 }
 
 .sticky .entry-title::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
   margin-left: 0.5407911001em;
   vertical-align: middle;
 }
@@ -125,89 +1266,109 @@ input[type=submit].loading,
 .added_to_cart.loading {
   position: relative;
 }
-button.loading::after,
-input[type=button].loading::after,
-input[type=reset].loading::after,
-input[type=submit].loading::after,
-.button.loading::after,
-.wc-block-grid__products .wc-block-grid__product .wp-block-button__link.loading::after,
-.added_to_cart.loading::after {
+button.loading:after,
+input[type=button].loading:after,
+input[type=reset].loading:after,
+input[type=submit].loading:after,
+.button.loading:after,
+.wc-block-grid__products .wc-block-grid__product .wp-block-button__link.loading:after,
+.added_to_cart.loading:after {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
-  -webkit-animation: fa-spin 0.75s linear infinite;
-          animation: fa-spin 0.75s linear infinite;
+  content: "";
+  -webkit-animation: wpcstore-spin 0.75s linear infinite;
+          animation: wpcstore-spin 0.75s linear infinite;
   height: 20px;
   width: 20px;
   line-height: 20px;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  margin-right: -10px;
-  margin-top: -10px;
-  display: block;
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 10px;
+}
+button.added:after,
+input[type=button].added:after,
+input[type=reset].added:after,
+input[type=submit].added:after,
+.button.added:after,
+.wc-block-grid__products .wc-block-grid__product .wp-block-button__link.added:after,
+.added_to_cart.added:after {
+  font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 .handheld-navigation ul.menu li button::after {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
 }
 
 .site-main nav.navigation .nav-previous a::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
   margin-left: 0.5407911001em;
 }
 .site-main nav.navigation .nav-next a::after {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
   margin-right: 0.5407911001em;
 }
 
 .widget_search form::before,
 .widget_product_search form::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
   position: absolute;
   top: 1em;
   left: 1em;
@@ -231,15 +1392,16 @@ input[type=submit].loading::after,
 }
 .single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
+  font-size: 14px;
   display: block;
   line-height: 45px;
   text-indent: 0;
@@ -258,54 +1420,59 @@ input[type=submit].loading::after,
   font-style: normal;
   font-variant: normal;
   line-height: 1;
-  content: "";
+  content: "";
 }
 
 .stock::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
   margin-left: 0.5407911001em;
 }
 .stock.in-stock::before {
-  content: "";
+  content: "";
 }
 .stock.out-of-stock::before {
-  content: "";
+  content: "";
 }
 
 a.reset_variations::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
   margin-left: 0.5407911001em;
 }
 
+.woocommerce-breadcrumb a {
+  text-decoration: none;
+}
 .woocommerce-breadcrumb a:first-of-type::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  vertical-align: middle;
+  content: "";
   margin-left: 0.5407911001em;
+  font-size: 12px;
 }
 
 .widget_recent_entries ul,
@@ -343,14 +1510,14 @@ a.reset_variations::before {
 .widget_layered_nav ul li::before,
 .widget_layered_nav_filters ul li::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
   margin-left: 0.5407911001em;
   display: block;
   float: right;
@@ -362,18 +1529,18 @@ a.reset_variations::before {
 
 .widget_product_categories ul li::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
 }
 .widget_product_categories ul li.current-cat::before {
-  content: "";
+  content: "";
 }
 .site-footer .widget_product_categories ul li {
   padding-right: 0;
@@ -387,70 +1554,70 @@ a.reset_variations::before {
 
 .widget_layered_nav li::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
 }
 .widget_layered_nav .chosen::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
 }
 
 .widget_layered_nav_filters ul li.chosen::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
   color: var(--error);
   opacity: 1;
 }
 
 .widget_recent_entries ul li::before,
 .widget_pages ul li::before {
-  content: "";
+  content: "";
 }
 
 .widget_categories ul li::before {
-  content: "";
+  content: "";
 }
 .widget_categories ul li.current-cat::before {
-  content: "";
+  content: "";
 }
 
 .widget_archive ul li::before {
-  content: "";
+  content: "";
 }
 
 .widget_recent_comments ul li::before {
-  content: "";
+  content: "";
 }
 
 .widget_nav_menu ul li::before {
-  content: "";
+  content: "";
 }
 
 .widget_links ul li::before {
-  content: "";
+  content: "";
 }
 
 a.remove {
@@ -465,15 +1632,16 @@ a.remove {
 }
 a.remove::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
+  font-size: 12px;
   position: absolute;
   top: 0;
   right: 0;
@@ -485,33 +1653,54 @@ a.remove::before {
   text-align: center;
 }
 
-.woocommerce-shipping-calculator > p:first-child a::before {
+.single-product div.product .summary .cart .button:before, li.product .button:before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
+  content: "";
+  font-weight: 600;
+  margin-left: 10px;
+}
+.single-product div.product .summary .cart .button.add_to_cart_button:before, .single-product div.product .summary .cart .button.single_add_to_cart_button:before, li.product .button.add_to_cart_button:before, li.product .button.single_add_to_cart_button:before {
+  content: "";
+}
+.single-product div.product .summary .cart .button.product_type_variable:before, li.product .button.product_type_variable:before {
+  content: "";
+}
+
+.woocommerce-shipping-calculator > p:first-child a::before {
+  font-family: "wpcstore-icon";
+  speak: never;
   font-style: normal;
-  font-variant: normal;
   font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
   line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
   margin-left: 0.3342343017em;
 }
 
 .blockUI::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
-  -webkit-animation: fa-spin 0.75s linear infinite;
-          animation: fa-spin 0.75s linear infinite;
+  content: "";
+  -webkit-animation: wpcstore-spin 0.75s linear infinite;
+          animation: wpcstore-spin 0.75s linear infinite;
   height: 30px;
   width: 30px;
   line-height: 30px;
@@ -543,15 +1732,16 @@ a.remove::before {
 .woocommerce-pagination .next::after,
 .woocommerce-pagination .prev::after {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
+  font-size: 12px;
   text-indent: 0;
   position: absolute;
   top: 50%;
@@ -560,7 +1750,7 @@ a.remove::before {
 }
 .pagination .next::after,
 .woocommerce-pagination .next::after {
-  content: "";
+  content: "";
 }
 
 .woocommerce-breadcrumb .breadcrumb-separator {
@@ -571,17 +1761,17 @@ a.remove::before {
 }
 .woocommerce-breadcrumb .breadcrumb-separator::after {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
   display: block;
-  font-size: 0.875em;
+  font-size: 8px;
   text-indent: 0;
   line-height: initial;
   position: absolute;
@@ -597,15 +1787,15 @@ a.remove::before {
 #payment .payment_methods > .woocommerce-PaymentMethod > label::before,
 #payment .payment_methods > .wc_payment_method > label::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
   margin-left: 0.5407911001em;
   transition: color, ease, 0.2s;
   line-height: inherit;
@@ -625,27 +1815,27 @@ a.remove::before {
   word-wrap: normal !important;
 }
 #payment .payment_methods li.woocommerce-PaymentMethod > input[type=radio]:first-child:checked + label::before, #payment .payment_methods li.wc_payment_method > input[type=radio]:first-child:checked + label::before {
-  content: "";
+  content: "";
 }
 
 .woocommerce-password-strength::after {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
   margin-right: 0.5407911001em;
 }
 .woocommerce-password-strength.strong::after {
-  content: "";
+  content: "";
 }
 .woocommerce-password-strength.good::after {
-  content: "";
+  content: "";
 }
 
 .woocommerce-MyAccount-navigation ul li.is-active a::before {
@@ -653,15 +1843,15 @@ a.remove::before {
 }
 .woocommerce-MyAccount-navigation ul li a::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
   line-height: 1.618;
   margin-right: 0.5407911001em;
   width: 1.41575em;
@@ -673,97 +1863,98 @@ a.remove::before {
   opacity: 1;
 }
 .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--dashboard a::before {
-  content: "";
+  content: "";
 }
 .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--orders a::before {
-  content: "";
+  content: "";
 }
 .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--downloads a::before {
-  content: "";
+  content: "";
 }
 .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--edit-address a::before {
-  content: "";
+  content: "";
 }
 .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--payment-methods a::before {
-  content: "";
+  content: "";
 }
 .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--edit-account a::before {
-  content: "";
+  content: "";
 }
 .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--customer-logout a::before {
-  content: "";
+  content: "";
 }
 .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--subscriptions a::before {
-  content: "";
+  content: "";
 }
 
 .my_account_orders .button.view::after {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
   margin-right: 0.5407911001em;
 }
 
 p.order-again .button::after {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
   margin-right: 0.5407911001em;
 }
 
 .woocommerce-MyAccount-downloads .button::after {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
   margin-right: 0.5407911001em;
 }
 
 .demo_store::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
   margin-left: 0.5407911001em;
 }
 
 .woocommerce-tabs ul.tabs li::after {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
+  font-size: 12px;
   display: block;
   position: absolute;
   top: 50%;
@@ -786,15 +1977,15 @@ p.order-again .button::after {
 }
 #reviews .commentlist li p.meta .verified::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
   color: var(--success);
   position: absolute;
   top: 0;
@@ -811,15 +2002,15 @@ p.order-again .button::after {
  */
 .single-product div.product .component_selections .clear_component_options::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
   margin-left: 0.5407911001em;
 }
 
@@ -829,15 +2020,15 @@ p.order-again .button::after {
 .cart .mnm_table_item .mnm_table_item_indent::before,
 .shop_table .mnm_table_item .mnm_table_item_indent::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
   transform: rotate(-90deg);
   margin-left: 0.3819820591em;
@@ -849,15 +2040,15 @@ p.order-again .button::after {
  */
 .quick-view-button::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
   margin-left: 0.6180469716em;
 }
 
@@ -867,33 +2058,33 @@ p.order-again .button::after {
 .woocommerce-page .ship_address .gift-form label::after,
 .woocommerce-page .no_shipping_address .gift-form label::after {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
   margin-right: 0.5407911001em;
 }
 .woocommerce-page .ship_address .modify-address-button::before,
 .woocommerce-page .no_shipping_address .modify-address-button::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
   margin-left: 0.5407911001em;
 }
 .woocommerce-page .addresses + .addresses header.title a::before {
-  content: "";
+  content: "";
 }
 
 /**
@@ -902,15 +2093,15 @@ p.order-again .button::after {
 .woocommerce .woocommerce-MyAccount-navigation li.woocommerce-MyAccount-navigation-link--contributions a::before,
 .woocommerce-page .woocommerce-MyAccount-navigation li.woocommerce-MyAccount-navigation-link--contributions a::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
 }
 
 /**
@@ -918,15 +2109,15 @@ p.order-again .button::after {
  */
 a#variations_clear::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
   margin-left: 0.5407911001em;
 }
 
@@ -935,60 +2126,60 @@ a#variations_clear::before {
  */
 .wl-add-link::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
   margin-left: 0.5407911001em;
 }
 
 .button.wl-create-new::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
   margin-left: 0.5407911001em;
 }
 
 .site-header-cart .cart-contents::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
-  font-size: 18px;
+  content: "";
+  font-size: 20px;
   vertical-align: middle;
   margin-left: -7px;
 }
 
 .site-header-wishlist .header-wishlist::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
-  font-size: 18px;
+  content: "";
+  font-size: 20px;
   vertical-align: middle;
   margin-left: -7px;
 }
@@ -998,15 +2189,15 @@ a#variations_clear::before {
 .main-navigation ul.nav-menu > li.menu-item-has-children > a::after,
 .main-navigation ul.nav-menu > li.page_item_has_children > a::after {
     font-family: "wpcstore-icon";
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    line-height: 1;
-    vertical-align: baseline;
-    content: "";
+    content: "";
     margin-right: 1em;
     vertical-align: middle;
     line-height: inherit;
@@ -1016,30 +2207,30 @@ a#variations_clear::before {
 .main-navigation ul.nav-menu ul li.menu-item-has-children > a::after,
 .main-navigation ul.nav-menu ul li.page_item_has_children > a::after {
     font-family: "wpcstore-icon";
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    line-height: 1;
-    vertical-align: baseline;
-    content: "";
+    content: "";
     float: left;
     line-height: 1.618;
   }
 
   .demo_store a.woocommerce-store-notice__dismiss-link::before {
     font-family: "wpcstore-icon";
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    line-height: 1;
-    vertical-align: baseline;
-    content: "";
+    content: "";
     margin-left: 0.3342343017em;
   }
 
@@ -1054,15 +2245,15 @@ a#variations_clear::before {
   }
   .addresses header.title a::before {
     font-family: "wpcstore-icon";
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    line-height: 1;
-    vertical-align: baseline;
-    content: "";
+    content: "";
     line-height: 1.618;
     position: absolute;
     top: 0;
@@ -1074,7 +2265,7 @@ a#variations_clear::before {
   }
 
   .woocommerce-tabs ul.tabs li::after {
-    content: "";
+    content: "";
   }
 
   /**
@@ -1082,15 +2273,15 @@ a#variations_clear::before {
    */
   #wl-wrapper .wl-tabs > li.active::after {
     font-family: "wpcstore-icon";
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    line-height: 1;
-    vertical-align: baseline;
-    content: "";
+    content: "";
     display: block !important;
     position: absolute;
     top: 50%;
@@ -1106,28 +2297,28 @@ li.product .woosc-btn::before,
 li.product .woosq-btn::before,
 li.product .woosw-btn::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
   display: block !important;
   margin: 0 !important;
 }
 .single-product div.product .summary .cart .woosc-btn::before,
 li.product .woosc-btn::before {
-  content: "";
+  content: "";
 }
 .single-product div.product .summary .cart .woosq-btn::before,
 li.product .woosq-btn::before {
-  content: "";
+  content: "";
 }
 .single-product div.product .summary .cart .woosw-btn::before,
 li.product .woosw-btn::before {
-  content: "";
+  content: "";
 }
 .single-product div.product .summary .cart [class*=-adding],
 li.product [class*=-adding] {
@@ -1136,28 +2327,27 @@ li.product [class*=-adding] {
 .single-product div.product .summary .cart [class*=-adding]::after,
 li.product [class*=-adding]::after {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "" !important;
-  -webkit-animation: fa-spin 0.75s linear infinite;
-          animation: fa-spin 0.75s linear infinite;
+  content: "" !important;
+  -webkit-animation: wpcstore-spin 0.75s linear infinite;
+          animation: wpcstore-spin 0.75s linear infinite;
   height: 20px;
   width: 20px;
   line-height: 20px;
-  font-size: 20px;
+  font-size: 14px;
   position: absolute;
   top: 50%;
   right: 50%;
   margin-right: -10px;
   margin-top: -10px;
   display: block;
-  color: #fff;
 }
 .single-product div.product .summary .cart [class*=-adding]:before,
 li.product [class*=-adding]:before {
@@ -1189,19 +2379,19 @@ p.no-comments::after {
 .woocommerce-noreviews::before,
 p.no-comments::before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
 }
 
 .woocommerce-message::before {
-  content: "";
+  content: "";
 }
 
 .entry-header .posted-on:before,
@@ -1209,53 +2399,53 @@ p.no-comments::before {
 .entry-header .post-categories:before,
 .entry-header .post-comments:before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
   color: var(--heading);
   margin-left: 7px;
 }
 .entry-header .posted-on:before {
-  content: "";
+  content: "";
 }
 .entry-header .post-author:before {
-  content: "";
+  content: "";
 }
 .entry-header .post-categories:before {
-  content: "";
+  content: "";
 }
 .entry-header .post-comments:before {
-  content: "";
+  content: "";
 }
 
 .gridlist-toggle .grid:before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
   line-height: inherit;
 }
 .gridlist-toggle .list:before {
   font-family: "wpcstore-icon";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  vertical-align: baseline;
-  content: "";
+  content: "";
   line-height: inherit;
 }
